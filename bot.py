@@ -95,3 +95,4 @@ async def help_cmd(inter: disnake.ApplicationCommandInteraction):
     await inter.response.send_message(embed=embed, ephemeral=True)
 
 bot.run("MTQ4MDMxMTA2NDA0MTIzMDQ3Nw.GHXPmi.G11JiMtA3UgeGffurX_gqOo_8Bh__Q8Geyy3uU")
+
