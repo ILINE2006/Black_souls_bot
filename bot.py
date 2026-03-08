@@ -94,5 +94,5 @@ async def help_cmd(inter: disnake.ApplicationCommandInteraction):
     embed.add_field(name="Модерация", value="`/clear <кол-во>`\n`/mute <юзер> <мин>`\n`/unmute <юзер>`\n`/kick <юзер>`\n`/ban <юзер>`", inline=False)
     await inter.response.send_message(embed=embed, ephemeral=True)
 
-bot.run("MTQ4MDMxMTA2NDA0MTIzMDQ3Nw.GHXPmi.G11JiMtA3UgeGffurX_gqOo_8Bh__Q8Geyy3uU")
+bot.run("токен бота")
 
