@@ -30,8 +30,8 @@ async def on_member_join(member: disnake.Member):
 
     try:
         # Открываем фон
-        background = Image.open("img/db.jpg").convert("RGBA")
-        background = background.resize((800, 300))  # Подгоняем размер
+        background = Image.open("img/sas.jpg").convert("RGBA")
+        background = background.resize((650, 300))  # Подгоняем размер
 
         # Скачиваем аватарку
         avatar_asset = member.display_avatar.with_size(128)
@@ -55,7 +55,7 @@ async def on_member_join(member: disnake.Member):
         # Рисуем текст
         draw.text((230, 90), "Добро пожаловать,", font=font_small, fill="white")
         draw.text((230, 130), f"{member.name}!", font=font_big, fill="white")
-        draw.text((230, 200), f"Ты наш {len(member.guild.members)}-й участник!", font=font_small, fill="lightgray")
+        draw.text((230, 200), f"Ты наш {len(member.guild.members)}-й участник!", font=font_small, fill="white")
 
         # Сохраняем результат в память и отправляем
         buffer = io.BytesIO()
@@ -81,8 +81,8 @@ async def userinfo(inter: disnake.ApplicationCommandInteraction, member: disnake
 
     try:
         # ВОТ ТУТ ИСПРАВЛЕН ПУТЬ К КАРТИНКЕ ФОНА!
-        background = Image.open("img/db.jpg").convert("RGBA")
-        background = background.resize((800, 300))
+        background = Image.open("img/sas.jpg").convert("RGBA")
+        background = background.resize((650, 300))
 
         # Скачиваем аватарку
         avatar_asset = member.display_avatar.with_size(128)
@@ -185,5 +185,5 @@ async def help_cmd(inter: disnake.ApplicationCommandInteraction):
     await inter.response.send_message(embed=embed, ephemeral=True)
 
 
-bot.run("токен")
+bot.run("fddf")
 
